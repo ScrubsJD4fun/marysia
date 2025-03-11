@@ -1,0 +1,22 @@
+.youtube-trailer {
+    position: absolute;
+    display: flex;
+    top: calc(50% - 270px);
+    left: calc(50% - 480px);
+}
+.youtube-frame {
+    position: absolute;
+    width: 960px;
+    height: 540px;
+}
+
+@media (max-width: 576px) {
+    .youtube-trailer {
+        top: 10%;
+        left: calc(50% - 187px);
+    }
+    .youtube-frame {
+        width: 375px;
+        height: 212px;
+    }
+}

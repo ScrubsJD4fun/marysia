@@ -1,0 +1,30 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-mail, .login-pass {
+  height: 56px;
+}
+.login-mail {
+  padding-left: 52px !important;
+  margin-bottom: 12px;
+}
+.login-pass {
+  padding-left: 52px !important;
+  margin-bottom: 24px;
+}
+
+.login-mail::placeholder {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.login-pass::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}

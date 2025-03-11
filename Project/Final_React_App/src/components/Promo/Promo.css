@@ -1,0 +1,244 @@
+.promo-app {
+    display: flex;
+    margin-bottom: 39px;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: start;
+    color: white;
+    gap: 50px;
+}
+
+.promo-img {
+    max-height: 552px;
+    border-radius: 9px;
+}
+
+.promo-info {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    gap: 16px;
+}
+
+.promo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.promo-border {
+    display: flex;
+    padding-right: 0 16px;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 32px;
+    border-radius: 16px;
+    gap: 3px;
+}
+
+.promo-rating {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.promo-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+}
+
+.promo-plot {
+    margin: 0;
+    margin-bottom: 44px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    color: var(--content-secondary, #FFFFFFB2);
+
+}
+
+.promo-buttons {
+    display: flex;
+    gap: 17px;
+}
+
+.promo-trailer {
+    width: 171px;
+    height: 56px;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    background: white;
+    outline: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.promo-about {
+    width: 183px;
+    height: 56px;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    background: var(--content-placeholder, #00000066);
+    outline: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.promo-favorite {
+    position: relative;
+    width: 68px;
+    height: 56px;
+    border-radius: 28px;
+    outline: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* background: #00000066 url('/heart.png') no-repeat center */
+}
+
+.promo-refresh {
+    width: 68px;
+    height: 56px;
+    border-radius: 28px;
+    outline: none;
+    background: #00000066 url('/refresh.png') no-repeat center;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.promo-favorite__add {
+    content: url('/purpure-heart.png');
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    position: absolute;
+    top: 17px; 
+    left: 17px;
+    animation: toFavorite 4s ease-in-out 0.3s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes toFavorite {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        width: 36px;
+        height: 36px;
+        opacity: 0.75;
+    }
+    50%{
+        width: 48px;
+        height: 48px;
+        transform: translate(300px, -300px);
+        opacity: 1;
+    }
+    75%{
+        width: 42px;
+        height: 42px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 36px;
+        height: 36px;
+        transform: translate(900px, -550px);
+        opacity: 0;
+    }
+}
+
+.promo-trailer:hover, .promo-about:hover, .promo-favorite:hover, .promo-refresh:hover  {
+    background-color: #67A5EB !important;
+    color: white;
+    
+}
+
+.promo-trailer:focus, .promo-about:focus, .promo-favorite:focus, .promo-refresh:focus {
+    background-color: #45526E !important;
+    color: #FFFFFF80;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .promo-app {
+        flex-direction: column;
+    }
+
+    .promo-info {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .promo-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .promo-plot {
+        margin-bottom: 32px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .promo-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .promo-trailer {
+        flex-grow: 1;
+        min-width: 171px;
+    }
+
+    .promo-about {
+        width: 175px;
+    }
+    .promo-favorite__add {
+        
+        animation: toFavoriteMobile 4s ease-in-out 0.3s;
+        /* animation-iteration-count: infinite; */
+    }
+
+    @keyframes toFavoriteMobile {
+        0%{
+            opacity: 0.2;
+        }
+        25%{
+            width: 36px;
+            height: 36px;
+            opacity: 0.75;
+        }
+        50%{
+            width: 48px;
+            height: 48px;
+            transform: translate(100px, -300px);
+            opacity: 1;
+        }
+        75%{
+            width: 42px;
+            height: 42px;
+            opacity: 0.5;
+        }
+        100%{
+            width: 36px;
+            height: 36px;
+            transform: translate(100px, -1000px);
+            opacity: 0;
+        }
+    }
+}

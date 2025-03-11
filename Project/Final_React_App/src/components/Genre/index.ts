@@ -1,0 +1,1 @@
+export { FetchSortedMovie } from './FetchSortedMovie'

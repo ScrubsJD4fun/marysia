@@ -1,0 +1,11 @@
+.svg-email__pos {
+    position: absolute;
+    top: 27%;
+    left: 16px;
+}
+
+.svg-pass__pos {
+    position: absolute;
+    top: 22%;
+    left: 16px;
+}

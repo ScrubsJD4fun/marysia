@@ -1,0 +1,51 @@
+.auth-modal {
+    position: relative;
+    max-width: 420px;
+    min-height: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    background-color: var(--color-white-text);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-form {
+    padding: 64px 40px;
+}
+
+.auth-logo {
+    margin-bottom: 40px;
+}
+
+.auth-title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+}
+
+.auth-button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.auth-modal__button {
+    position: absolute;
+    top: 0;
+    right: -64px;
+    width: 48px;
+    height: 48px;
+    border: 0 solid transparent;
+    border-radius: 50%;
+    background: var(--color-white-text) url('/cross.png') no-repeat center;
+}
+
+@media (max-width: 576px) {
+    .auth-form {
+        padding: 64px 20px;
+    }
+}
