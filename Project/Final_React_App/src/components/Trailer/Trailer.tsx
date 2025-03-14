@@ -1,16 +1,15 @@
-import type { FC } from 'react'
-import './Trailer.css'
+import type { FC } from "react"
+import "./Trailer.css"
 
 export interface TrailerId {
-    videoId: string
+  videoId: string
 }
 
-export const Trailer: FC<TrailerId> = ({videoId}) => {
+export const Trailer: FC<TrailerId> = ({ videoId }) => {
   return (
     <div className="youtube-trailer">
       <iframe
-      className='youtube-frame'
-        
+        className="youtube-frame"
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1&muted=true`}
         title="YouTube video player"
         frameBorder="0"

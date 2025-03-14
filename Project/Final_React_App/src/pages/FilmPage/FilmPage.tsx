@@ -1,14 +1,14 @@
-import { useParams } from 'react-router-dom'
-import { FetchFilmId } from '../../components/Film/FetchFilmId'
+import { useParams } from "react-router-dom"
+import { FetchFilmId } from "../../components/Film/FetchFilmId"
 
 const FilmPage = () => {
-    const { id } = useParams()
-    
+  const { id } = useParams()
+
   return (
     <>
-        <FetchFilmId id={id} />
+      <FetchFilmId id={id} />
     </>
   )
 }
 
-export default FilmPage;
+export default FilmPage

@@ -1,23 +1,23 @@
 .footer {
-    display: flex;
-    padding: 40px 0;
-    justify-content: end;
-    gap: 23px;
+  display: flex;
+  padding: 40px 0;
+  justify-content: end;
+  gap: 23px;
 }
 
 .footer-img > img {
-    transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .footer-img:hover > img {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 /* .footer-img:focus > img {
     transform: scale(1.5);
 } */
 
 @media (max-width: 576px) {
-    .footer {
-        justify-content: start;
-    }
+  .footer {
+    justify-content: start;
+  }
 }

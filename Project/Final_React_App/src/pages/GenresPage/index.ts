@@ -1,1 +1,1 @@
-export * from './GenresPage'
+export * from "./GenresPage"

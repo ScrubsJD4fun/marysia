@@ -1,23 +1,23 @@
 .register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .register-form input {
-    padding-left: 52px;
-    height: 56px;
+  padding-left: 52px;
+  height: 56px;
 }
 
 .register-form input::placeholder {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .register-form__valid {
-    border: 1px solid green !important;
+  border: 1px solid green !important;
 }
 .register-form__invalid {
-    border: 1px solid red !important;
+  border: 1px solid red !important;
 }

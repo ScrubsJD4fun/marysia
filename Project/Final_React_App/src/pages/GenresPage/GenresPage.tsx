@@ -1,11 +1,11 @@
 import { FetchGenreMovie } from "../../components"
 
 const GenresPage = () => {
-    return (
-        <>
-            <FetchGenreMovie />
-        </>
-    )
+  return (
+    <>
+      <FetchGenreMovie />
+    </>
+  )
 }
 
-export default GenresPage;
+export default GenresPage

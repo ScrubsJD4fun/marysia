@@ -6,6 +6,6 @@
 
 @media (max-width: 576px) {
   .layout {
-      overflow-x: overlay;
+    overflow-x: overlay;
   }
 }

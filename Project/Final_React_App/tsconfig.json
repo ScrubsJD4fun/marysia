@@ -14,7 +14,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "references": [{ "path": "./tsconfig.node.json" }]
+ 
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "vite.config.ts"],
+  
+  // "references": [{ "path": "./tsconfig.node.json" }]
 }

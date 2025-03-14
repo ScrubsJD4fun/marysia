@@ -13,8 +13,7 @@
   line-height: 24px;
   outline: none;
   cursor: pointer;
-  background: #67A5EB;
-
+  background: #67a5eb;
 }
 
 .button:disabled {

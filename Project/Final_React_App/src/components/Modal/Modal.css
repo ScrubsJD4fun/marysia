@@ -1,26 +1,25 @@
 .overlay {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
 }
 
-
 @media (max-width: 576px) {
-    .modal {
-        max-width: 335px;
-        transform: translateY(-200px);
-    }
+  .modal {
+    max-width: 335px;
+    transform: translateY(-200px);
+  }
 
-    .modal-button {
-        top: 5px;
-        right: 5px;
-    }
+  .modal-button {
+    top: 5px;
+    right: 5px;
+  }
 }

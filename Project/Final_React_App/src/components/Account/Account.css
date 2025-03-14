@@ -1,196 +1,199 @@
 .acc-title {
-    display: flex;
-    margin: 0;
-    margin-bottom: 64px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: var(--color-white-text);
+  display: flex;
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--color-white-text);
 }
 
 .acc-tabs {
-    display: flex;
-    margin-bottom: 64px;
-    gap: 64px;
+  display: flex;
+  margin-bottom: 64px;
+  gap: 64px;
 }
 
-.acc-tabs__settings, .acc-tabs__films {
-    padding-left: 30px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    color: var(--color-white-text);
+.acc-tabs__settings,
+.acc-tabs__films {
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-white-text);
 }
 
 .acc-tabs__settings {
-    background: url('/favorite.png') no-repeat left;
+  background: url("/favorite.png") no-repeat left;
 }
 .acc-tabs__films {
-    background: url('/user.png') no-repeat left;
+  background: url("/user.png") no-repeat left;
 }
 
 .acc-user {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .acc-user:first-child {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .acc-user:nth-child(2n) {
-    margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .acc-user__abbr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border: 0 solid transparent;
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: var(--color-white-text);
-    background: var(--background-disabled, #FFFFFF80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 0 solid transparent;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-white-text);
+  background: var(--background-disabled, #ffffff80);
 }
 
 .acc-user__descr {
-    display: flex;
-    margin: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--color-white-text);
+  display: flex;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-white-text);
 }
 .acc-user__name {
-    margin: 0;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: var(--color-white-text);
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-white-text);
 }
 
 .acc-user__email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border: 0 solid transparent;
-    border-radius: 50%;
-    background: var(--background-disabled, #FFFFFF80) url('/email-white.png') no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 0 solid transparent;
+  border-radius: 50%;
+  background: var(--background-disabled, #ffffff80) url("/email-white.png")
+    no-repeat center;
 }
 
 .acc-dispatch {
-    margin-bottom: 406px;
-    width: 262px;
-    height: 56px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: black;
-    border-radius: 28px;
-    background-color: white;
-    outline: none;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-bottom: 406px;
+  width: 262px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  border-radius: 28px;
+  background-color: white;
+  outline: none;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 }
 
 .favor-list {
-    position: relative;
-    display: flex;
-    margin-bottom: 120px !important;
-    flex-wrap: wrap;
-    gap: 39px;
-    row-gap: 64px;
+  position: relative;
+  display: flex;
+  margin-bottom: 120px !important;
+  flex-wrap: wrap;
+  gap: 39px;
+  row-gap: 64px;
 }
 
 .favor-item {
-    position: relative;
-    width: 224px;
+  position: relative;
+  width: 224px;
 }
 .favor-poster {
-    max-width: 224px;
-    width: 100%;
-    height: 336px;
-    border: 0 solid transparent;
-    border-radius: 16px;
-    box-shadow: 0px 0px 80px 0px #FFFFFF54;
+  max-width: 224px;
+  width: 100%;
+  height: 336px;
+  border: 0 solid transparent;
+  border-radius: 16px;
+  box-shadow: 0px 0px 80px 0px #ffffff54;
 }
 .favor-button {
-    display: none;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 40px;
-    height: 40px;
-    border: 0 solid transparent;
-    border-radius: 50%;
-    background: var(--color-white-text) url('/cross.png') no-repeat center;
-    opacity: 0.6;
-    z-index: 3;
+  display: none;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  border: 0 solid transparent;
+  border-radius: 50%;
+  background: var(--color-white-text) url("/cross.png") no-repeat center;
+  opacity: 0.6;
+  z-index: 3;
 }
 
 .favor-root {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .favor-root:hover + .favor-button {
-    display: block;
+  display: block;
 }
 
 .favor-button:hover {
-    display: block;
+  display: block;
 }
 
 .acc-dispatch:hover {
-    background-color: #67A5EB !important;
-    color: white;
+  background-color: #67a5eb !important;
+  color: white;
 }
 
 .acc-dispatch:focus {
-    background-color: #45526E !important;
-    color: #FFFFFF80;
+  background-color: #45526e !important;
+  color: #ffffff80;
 }
 
-.acc-tabs__settings::after, .acc-tabs__films::after {
-    display: block; 
-    content: ""; 
-    height: 3px; 
-    width: 0%; 
-    background-color: #DC5DFC; 
-    transition: width 0.3s ease-in-out;
+.acc-tabs__settings::after,
+.acc-tabs__films::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #dc5dfc;
+  transition: width 0.3s ease-in-out;
 }
 
-.acc-tabs__settings:hover::after, .acc-tabs__films:hover::after {
-    width: 100%;
+.acc-tabs__settings:hover::after,
+.acc-tabs__films:hover::after {
+  width: 100%;
 }
-
-
 
 @media (max-width: 576px) {
-    .acc-title {
-        margin-bottom: 25px;
-        font-size: 24px;
-        line-height: 32px;
-    }
+  .acc-title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 
-    .acc-tabs {
-        gap: 24px;
-    }
+  .acc-tabs {
+    gap: 24px;
+  }
 
-    .favor-list {
-        margin-bottom: 32px !important;
-        padding: 15px !important;
-        flex-wrap: nowrap;
-        overflow-x: overlay;
-    }
+  .favor-list {
+    margin-bottom: 32px !important;
+    padding: 15px !important;
+    flex-wrap: nowrap;
+    overflow-x: overlay;
+  }
 
-    .acc-dispatch {
-        margin-bottom: 100px;
-    }
+  .acc-dispatch {
+    margin-bottom: 100px;
+  }
 }
-

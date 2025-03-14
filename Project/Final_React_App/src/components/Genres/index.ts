@@ -1,1 +1,1 @@
-export { FetchGenreMovie } from './FetchGenreMovie'
+export { FetchGenreMovie } from "./FetchGenreMovie"

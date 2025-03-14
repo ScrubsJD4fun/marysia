@@ -1,1 +1,1 @@
-export { Trailer } from './Trailer'
+export { Trailer } from "./Trailer"

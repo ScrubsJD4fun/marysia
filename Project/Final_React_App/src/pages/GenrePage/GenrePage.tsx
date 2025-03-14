@@ -3,9 +3,9 @@ import { FetchSortedMovie } from "../../components"
 const GenrePage = () => {
   return (
     <>
-        <FetchSortedMovie />
+      <FetchSortedMovie />
     </>
   )
 }
 
-export default GenrePage;
+export default GenrePage

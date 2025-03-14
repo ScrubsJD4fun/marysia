@@ -6,26 +6,29 @@ import { Loader } from "../Loader"
 import { useParams } from "react-router-dom"
 
 export const FetchSortedMovie = () => {
-    const { genreName } = useParams();
+  const { genreName } = useParams()
 
-    
-    const querySortedMovie = useQuery({
-        queryFn: () => fetchMovie(genreName as string),
-        queryKey: ['movie', genreName]
-    }, queryClient)
-    
-    switch (querySortedMovie.status) {
-        case 'pending':
-            return (<Loader />)
-        case "success":
-            
-            return <Genre films={querySortedMovie.data} genres={genreName as string} />
-        case "error":
-            return (
-                <div>
-                    <span>Произошла ошибка</span>
-                    <button onClick={() => querySortedMovie.refetch()}></button>
-                </div>
-            )
-    }
+  const querySortedMovie = useQuery(
+    {
+      queryFn: () => fetchMovie(genreName as string),
+      queryKey: ["movie", genreName],
+    },
+    queryClient,
+  )
+
+  switch (querySortedMovie.status) {
+    case "pending":
+      return <Loader />
+    case "success":
+      return (
+        <Genre films={querySortedMovie.data} genres={genreName as string} />
+      )
+    case "error":
+      return (
+        <div>
+          <span>Произошла ошибка</span>
+          <button onClick={() => querySortedMovie.refetch()}></button>
+        </div>
+      )
+  }
 }

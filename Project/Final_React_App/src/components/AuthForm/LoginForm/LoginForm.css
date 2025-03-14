@@ -1,10 +1,11 @@
 .login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.login-mail, .login-pass {
+.login-mail,
+.login-pass {
   height: 56px;
 }
 .login-mail {

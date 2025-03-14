@@ -1,1 +1,1 @@
-export * from './svg/index'
+export * from "./svg/index"

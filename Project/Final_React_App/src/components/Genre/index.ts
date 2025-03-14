@@ -1,1 +1,1 @@
-export { FetchSortedMovie } from './FetchSortedMovie'
+export { FetchSortedMovie } from "./FetchSortedMovie"
